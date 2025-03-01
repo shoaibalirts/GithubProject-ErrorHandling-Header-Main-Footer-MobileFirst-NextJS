@@ -9,5 +9,5 @@ export default function fetchErrorHandling(response) {
       throw new Error("Forbidden action in fetch.");
     }
   }
-  return true;
+  
 }
