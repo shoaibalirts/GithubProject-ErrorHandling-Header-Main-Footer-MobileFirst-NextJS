@@ -15,7 +15,7 @@ export default function Home() {
           <p className="font-ubuntu font-[400]">Ubuntu400</p>
           <p className="font-ubuntu font-[700]">Ubuntu700</p>
         </div>
-        <div>
+        <div className="md:bg-red-500">
           <p className={`${robotoFont.className} font-[100]`}>Roboto100</p>
           <p className={`${robotoFont.className} font-[200] bg-blackish text-white`}>Roboto200</p>
           <p className={`${robotoFont.className} font-[300]`}>Roboto300</p>

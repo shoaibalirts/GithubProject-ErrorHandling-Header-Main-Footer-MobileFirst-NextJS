@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="da">
-      <body className={`${ubuntuFont.className} bg-mehroonish`}>{children}</body>
+      <body className={`${ubuntuFont.className}`}>{children}</body>
     </html>
   );
 }
