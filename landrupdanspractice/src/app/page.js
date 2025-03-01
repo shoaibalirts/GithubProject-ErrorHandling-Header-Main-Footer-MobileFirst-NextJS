@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div>
           <p className={`${robotoFont.className} font-[100]`}>Roboto100</p>
-          <p className={`${robotoFont.className} font-[200]`}>Roboto200</p>
+          <p className={`${robotoFont.className} font-[200] bg-blackish text-white`}>Roboto200</p>
           <p className={`${robotoFont.className} font-[300]`}>Roboto300</p>
           <p className={`${robotoFont.className} font-[400]`}>Roboto400</p>
         </div>
