@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci"; // search icon
 import { IoCalendarClearOutline } from "react-icons/io5"; // calendar icon
 import { cookies } from "next/headers";
 export default async function Footer() {
-  /*
+
   const cookieStore = await cookies();
   const hasRole = cookieStore.has("cookieRole");
   const hasToken = cookieStore.has("cookieToken");
@@ -17,18 +17,20 @@ export default async function Footer() {
       return "/calendar";
     }
   }
-    */
+    
   return (
-    <footer className="mb-0 bg-grayish shadow-xl w-[100vw] flex justify-between px-20 py-4">
-      <Link href="/activities" className="text-red-black">
-        <FiHome className="w-[10vw] h-[10vh]" />
-      </Link>
-      <Link href="/search" className="text-black">
-        <CiSearch className="w-[10vw] h-[10vh]" />
-      </Link>
-      <Link href={loginPageOrCalendarPage()} className="text-black">
-        <IoCalendarClearOutline className="w-[10vw] h-[10vh]" />
-      </Link>
-    </footer>
+    <>
+      <footer className="fixed bottom-0 left-0 w-full max-w-screen-sm bg-mehroonish text-white p-4 text-center shadow-md flex justify-between">
+        <Link href="/activities" className="text-white">
+          <FiHome className="w-4 h-4"/>
+        </Link>
+        <Link href="/search" className="text-white">
+          <CiSearch className="w-4 h-4" />
+        </Link>
+        <Link href={loginPageOrCalendarPage()} className="text-white">
+          <IoCalendarClearOutline className="w-4 h-4" />
+        </Link>
+      </footer>
+    </>
   );
 }
