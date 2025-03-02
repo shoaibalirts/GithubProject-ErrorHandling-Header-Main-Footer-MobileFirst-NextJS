@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci"; // search icon
 import { IoCalendarClearOutline } from "react-icons/io5"; // calendar icon
 import { cookies } from "next/headers";
 export default async function Footer() {
+  /*
   const cookieStore = await cookies();
   const hasRole = cookieStore.has("cookieRole");
   const hasToken = cookieStore.has("cookieToken");
@@ -16,6 +17,7 @@ export default async function Footer() {
       return "/calendar";
     }
   }
+    */
   return (
     <footer className="mb-0 bg-grayish shadow-xl w-[100vw] flex justify-between px-20 py-4">
       <Link href="/activities" className="text-red-black">

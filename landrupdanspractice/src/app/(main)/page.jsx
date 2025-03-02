@@ -1,9 +1,9 @@
 import { getAllActivities } from "@/lib/server-fetch";
+import NotFoundPage from "../not-found";
 import ActivityCard from "./activity-card";
-export default async function HomePage(){
-
+export default async function HomePage(){  
     const activities = await getAllActivities();
-    // console.log(activities);
+    
     return (
         <>
             <h1>Activities</h1>
